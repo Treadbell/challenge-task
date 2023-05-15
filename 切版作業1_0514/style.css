@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 公版用他新增你要定義的內容，自訂義內容新增在下面*/
+
+/* *{
+	outline: 1px solid pink;
+} */
+.wrap{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	width: 1296px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.item{
+	width: 414px;
+	height: 558px;
+	border: 1px solid #F2F2F2;
+	border-radius: 16px;
+	margin-bottom: 24px;
+	overflow:hidden;
+}
+img{
+	max-width: 100%;
+}
+.img-scale{
+	overflow:hidden;
+}
+.item .img-scale img{
+	display:block;
+	transform:scale(1,1);
+	transition: all 0.3s ease-out;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+.item .img-scale img:hover{
+	transform: scale(1.2);
+}
+.abstract{
+	height: 118px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+h2{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 12px;
+}
+.small{
+	font-size: 14px;
+	line-height: 1.5;
+}
+.align-center{
+	margin-left: 32px;
+	margin-right: 32px;
+}
+.between{
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.5;
+	border-top: 1px solid #F2F2F2;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-bottom: 20px;
+}
+.bold{
+	font-size: 16px;
+	font-weight: bold;
+}
+.bottom{
+	height: 128px;
+	box-sizing: border-box;
+}
